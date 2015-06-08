@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectSoftware.Insight.Extensions.CommonLogging 4.5", "src\ReflectSoftware.Insight.Extensions.CommonLogging 4.5.csproj", "{F9D54963-6667-49A4-96BB-64024A3BF061}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{64DE93BF-E553-43DA-A59D-F07DCA3E9924}"
+	ProjectSection(SolutionItems) = preProject
+		Build.ps1 = Build.ps1
+		CHANGES.md = CHANGES.md
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9D54963-6667-49A4-96BB-64024A3BF061}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D54963-6667-49A4-96BB-64024A3BF061}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D54963-6667-49A4-96BB-64024A3BF061}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D54963-6667-49A4-96BB-64024A3BF061}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
