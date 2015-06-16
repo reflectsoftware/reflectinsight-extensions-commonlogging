@@ -26,34 +26,34 @@ Then add the following configuration to your app/web configuration file:
   <configSections>        
     <section name="insightSettings" type="ReflectSoftware.Insight.ConfigurationHandler,ReflectSoftware.Insight"/>
     <sectionGroup name="common">
-      	<section name="logging" type="Common.Logging.ConfigurationSectionHandler, Common.Logging" />
+      <section name="logging" type="Common.Logging.ConfigurationSectionHandler, Common.Logging" />
     </sectionGroup>
   </configSections>
 
   <common>
     <logging>
-	  <factoryAdapter type="ReflectSoftware.Insight.Extensions.CommonLogging.RIFactoryAdapter, ReflectSoftware.Insight.Extensions.CommonLogging">
+      <factoryAdapter type="ReflectSoftware.Insight.Extensions.CommonLogging.RIFactoryAdapter, ReflectSoftware.Insight.Extensions.CommonLogging">
 	<arg key="configType" value="FILE" />
-        </factoryAdapter>
+      </factoryAdapter>
     </logging>
   </common>
 
   <insightSettings>
     <baseSettings>
-  <configChange enabled="true"/>      
-  <propagateException enabled="false"/>      
-  <exceptionEventTracker time="20"/>
-  <debugMessageProcess enabled="true"/>
-</baseSettings>
+      <configChange enabled="true"/>      
+      <propagateException enabled="false"/>      
+      <exceptionEventTracker time="20"/>
+      <debugMessageProcess enabled="true"/>
+    </baseSettings>
 
-	<listenerGroups active="Active">
-  <group name="Active" enabled="true" maskIdentities="false">
-    <destinations>
+    <listenerGroups active="Active">
+      <group name="Active" enabled="true" maskIdentities="false">
+        <destinations>
   	  <destination name="Viewer" enabled="true" filter="" details="Viewer"/>
-    </destinations>
-  </group>
-</listenerGroups>    
-</insightSettings>
+        </destinations>
+      </group>
+    </listenerGroups>    
+  </insightSettings>
 </configuration>
 ```
 
