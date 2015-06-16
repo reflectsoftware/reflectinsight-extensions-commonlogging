@@ -57,7 +57,7 @@ Then add the following configuration to your app/web configuration file:
 </configuration>
 ```
 
-Addition configuration details for the ReflectSoftware.Insight.Extensions.CommonLogging logging extension can be found [here](https://reflectsoftware.atlassian.net/wiki/display/RI5/ReflectInsight+5+documentation).
+Additional configuration details for the ReflectSoftware.Insight.Extensions.CommonLogging logging extension can be found [here](https://reflectsoftware.atlassian.net/wiki/display/RI5/ReflectInsight+5+documentation).
 
 ## Additional Resources
 
