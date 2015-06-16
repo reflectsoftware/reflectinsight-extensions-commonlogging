@@ -13,7 +13,51 @@ The Common.Logging extension supports Common.Logging v2.1.2. However if you need
 
 ## Getting Started
 
-Coming soon...
+To install ReflectSoftware.Insight.Extensions.CommonLogging extension, run the following command in the Package Manager Console:
+
+	```powershell
+    Install-Package ReflectSoftware.Insight.Extensions.CommonLogging
+	```
+Then add the following configuration to your app/web configuration file:
+
+    ```xml	
+	<?xml version="1.0"?>
+	<configuration>
+	  <configSections>        
+    	<section name="insightSettings" type="ReflectSoftware.Insight.ConfigurationHandler,ReflectSoftware.Insight"/>
+    	<sectionGroup name="common">
+      		<section name="logging" type="Common.Logging.ConfigurationSectionHandler, Common.Logging" />
+    	</sectionGroup>
+	  </configSections>
+
+	  <common>
+    	<logging>
+		  <factoryAdapter type="ReflectSoftware.Insight.Extensions.CommonLogging.RIFactoryAdapter, ReflectSoftware.Insight.Extensions.CommonLogging">
+        	<arg key="configType" value="FILE" />
+      	  </factoryAdapter>
+    	</logging>
+	  </common>
+
+	  <insightSettings>
+    	<baseSettings>
+          <configChange enabled="true"/>      
+          <propagateException enabled="false"/>      
+          <exceptionEventTracker time="20"/>
+          <debugMessageProcess enabled="true"/>
+        </baseSettings>
+        
+		<listenerGroups active="Active">
+          <group name="Active" enabled="true" maskIdentities="false">
+            <destinations>
+          	  <destination name="Viewer" enabled="true" filter="" details="Viewer"/>
+            </destinations>
+          </group>
+        </listenerGroups>    
+      </insightSettings>
+	</configuration>
+	```
+
+Addition configuration details for the ReflectSoftware.Insight.Extensions.CommonLogging logging extension can be found [here](https://reflectsoftware.atlassian.net/wiki/display/RI5/ReflectInsight+5+documentation).
 
 ## Additional Resources
 
