@@ -15,12 +15,12 @@ The Common.Logging extension supports Common.Logging v2.1.2. However if you need
 
 To install ReflectSoftware.Insight.Extensions.CommonLogging extension, run the following command in the Package Manager Console:
 
-	```powershell
+```powershell
     Install-Package ReflectSoftware.Insight.Extensions.CommonLogging
-	```
+```
 Then add the following configuration to your app/web configuration file:
 
-    ```xml	
+```xml	
 	<?xml version="1.0"?>
 	<configuration>
 	  <configSections>        
@@ -55,7 +55,7 @@ Then add the following configuration to your app/web configuration file:
         </listenerGroups>    
       </insightSettings>
 	</configuration>
-	```
+```
 
 Addition configuration details for the ReflectSoftware.Insight.Extensions.CommonLogging logging extension can be found [here](https://reflectsoftware.atlassian.net/wiki/display/RI5/ReflectInsight+5+documentation).
 
