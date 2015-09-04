@@ -20,7 +20,7 @@ You can view your Common Logging messages in realtime, in a rich viewer that all
         <summary>ReflectInsight Common Logging extention makes it easy to integrate ReflectInsight into your existing application logging infrastructure and leverage the power of the ReflectInsight log viewer.</summary>
         <releaseNotes></releaseNotes>
         <copyright>© 2015 ReflectSoftware Inc.</copyright>
-        <tags>Common Logging Extensions ReflectInsight Appender Log Tracing RabbitMQ</tags>
+        <tags>reflectinsight logging log logfiles events Common.Logging structured tracing trace debug diagnostic</tags>
         <dependencies>
             <dependency id="Common.Logging" version="2.3.1" />
             <dependency id="ReflectSoftware.Insight" version="5.5.1" />
