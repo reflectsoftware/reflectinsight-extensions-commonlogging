@@ -1,9 +1,9 @@
 # ReflectInsight-Extensions-CommonLogging
 
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/reflectsoftware/reflectinsight-extensions-commonlogging?svg=true)](https://ci.appveyor.com/project/reflectsoftware/reflectinsight-extensions-commonloggin)
+[![License](https://img.shields.io/:license-MS--PL-blue.svg)](https://github.com/reflectsoftware/reflectinsight-extensions-commonlogging/license.md)
 [![Release](https://img.shields.io/github/release/reflectsoftware/reflectinsight-extensions-commonlogging.svg)](https://github.com/reflectsoftware/reflectinsight-extensions-commonlogging/releases/latest)
 [![NuGet Version](http://img.shields.io/nuget/v/reflectsoftware.insight.extensions.commonlogging.svg?style=flat)](http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.CommonLogging/)
-[![NuGet](https://img.shields.io/nuget/dt/reflectsoftware.insight.extensions.commonlogging.svg)](http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.CommonLogging/)
 [![Stars](https://img.shields.io/github/stars/reflectsoftware/reflectinsight-extensions-commonlogging.svg)](https://github.com/reflectsoftware/reflectinsight-extensions-commonlogging/stargazers)
 
 
