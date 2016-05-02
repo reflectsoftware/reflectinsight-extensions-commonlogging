@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectSoftware.Insight.Extensions.CommonLogging 4.0", "src\ReflectSoftware.Insight.Extensions.CommonLogging 4.0.csproj", "{F005970A-2CF8-4E0E-94B1-BBAE99FC7208}"
 EndProject
@@ -11,6 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solutio
 		CHANGES.md = CHANGES.md
 		LICENSE.md = LICENSE.md
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{551C2B83-969C-4161-B13E-D18F0E86D76C}"
+	ProjectSection(SolutionItems) = preProject
+		src\ReflectSoftware.Insight.Extensions.CommonLogging.nuspec = src\ReflectSoftware.Insight.Extensions.CommonLogging.nuspec
 	EndProjectSection
 EndProject
 Global
@@ -26,5 +31,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{551C2B83-969C-4161-B13E-D18F0E86D76C} = {E08CD6E0-7B8E-40F0-8D3A-1DC948BDF594}
 	EndGlobalSection
 EndGlobal

@@ -10,9 +10,9 @@
         <projectUrl>https://github.com/reflectsoftware/reflectinsight-extensions-commonlogging</projectUrl>
         <iconUrl>http://reflectsoftware.com/images/ReflectInsight-Element-256.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>We've added support for the Common Logging appender. This allows you to leverage your current investment in Common Logging, but leverage the power and flexibility that comes with the ReflectInsight viewer. 
+        <description>We've added support for the Common Logging appender. This allows you to leverage your current investment in Common Logging, but leverage the power and flexibility that comes with the ReflectInsight viewer.
 
-In order to use this extension you must have the ReflectInsight Viewer installed. Download and install the ReflectInsight Viewer from this location: 
+In order to use this extension you must have the ReflectInsight Viewer installed. Download and install the ReflectInsight Viewer from this location:
 
 http://www.ReflectSoftware.com/Public/Download.aspx
 
@@ -22,17 +22,16 @@ You can view your Common Logging messages in realtime, in a rich viewer that all
         <copyright>© 2016 ReflectSoftware Inc.</copyright>
         <tags>reflectinsight logging log logfiles events Common.Logging structured tracing trace debug diagnostic</tags>
         <dependencies>
-            <dependency id="Common.Logging" version="2.3.1" />
-            <dependency id="ReflectSoftware.Insight" version="5.5.1" />
+            <dependency id="Common.Logging" version="3.3.1" />
+            <dependency id="ReflectSoftware.Insight" version="5.6.0" />
         </dependencies>
         <references>
             <reference file="ReflectSoftware.Insight.Extensions.CommonLogging.dll" />
         </references>
     </metadata>
     <files>
-        <file src="bin\release\net20\ReflectSoftware.Insight.Extensions.CommonLogging.dll" target="lib\net20\ReflectSoftware.Insight.Extensions.CommonLogging.dll" />
-        <file src="bin\release\net40\ReflectSoftware.Insight.Extensions.CommonLogging.dll" target="lib\net40\ReflectSoftware.Insight.Extensions.CommonLogging.dll" />
-        <file src="bin\release\net45\ReflectSoftware.Insight.Extensions.CommonLogging.dll" target="lib\net45\ReflectSoftware.Insight.Extensions.CommonLogging.dll" />        
-        <file src="readme.txt" target="readme.txt" />
+        <!--<file src="bin\release\net20\ReflectSoftware.Insight.Extensions.CommonLogging.dll" target="lib\net20\ReflectSoftware.Insight.Extensions.CommonLogging.dll" />
+        <file src="bin\release\net40\ReflectSoftware.Insight.Extensions.CommonLogging.dll" target="lib\net40\ReflectSoftware.Insight.Extensions.CommonLogging.dll" />-->
+        <file src="bin\release\net45\ReflectSoftware.Insight.Extensions.CommonLogging.dll" target="lib\net45\ReflectSoftware.Insight.Extensions.CommonLogging.dll" />
     </files>
 </package>

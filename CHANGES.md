@@ -3,7 +3,8 @@
 #### Version 5.6.0 ####
  * Updated extension to use ReflectInsight 5.6.0 version
  * Updated extension to use Common.Logging 3.3.1 version
- 
+ * Dropping support for older .NET versions. As of this release, we're only deploying NuGet package for .NET 4.5. However the source code still supports older framework. 
+
 #### Version 5.5.1 ####
  * Bug fixes for packages improperly being downloaded. RabbitMQ is now a nuget dependency.
  
