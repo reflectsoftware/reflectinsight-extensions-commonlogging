@@ -6,7 +6,7 @@
 [![NuGet Version](http://img.shields.io/nuget/v/reflectsoftware.insight.extensions.commonlogging.svg?style=flat)](http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.CommonLogging/)
 [![Stars](https://img.shields.io/github/stars/reflectsoftware/reflectinsight-extensions-commonlogging.svg)](https://github.com/reflectsoftware/reflectinsight-extensions-commonlogging/stargazers)
 
-**Package** - [ReflectSoftware.Insight.Extensions.CommonLogging](http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.CommonLogging/) | **Platforms** - .NET 4.5.1 (min)
+**Package** - [ReflectSoftware.Insight.Extensions.CommonLogging](http://www.nuget.org/packages/ReflectSoftware.Insight.Extensions.CommonLogging/) | **Platforms** - .NET 4.5.1 and above
 
 We've added support for the Common.Logging framework. This allows you to leverage your current investment in the Common.Logging framework, but leverage the power and flexibility that comes with the ReflectInsight viewer. You can view your Common.Logging messages in real-time, in a rich viewer that allows you to filter out and search for what really matters to you.
 
