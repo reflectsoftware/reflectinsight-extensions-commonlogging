@@ -27,31 +27,52 @@ namespace ReflectSoftware.Insight.Extensions.CommonLogging
     {
         static private readonly MethodInfo FSendInternalErrorMethodInfo;
 
-        private readonly ReflectInsight FReflectInsight;
+        private readonly IReflectInsight FReflectInsight;
 
-        ///--------------------------------------------------------------------
+        /// <summary>
+        /// Initializes the <see cref="RICommonLogger"/> class.
+        /// </summary>
+        /// <seealso cref="M:Common.Logging.Factory.AbstractLogger.GetWriteHandler" />
         static RICommonLogger()
         {
             FSendInternalErrorMethodInfo = typeof(ReflectInsight).GetMethod("SendInternalError", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.InvokeMethod);
-        }        
-        ///--------------------------------------------------------------------
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RICommonLogger"/> class.
+        /// </summary>
+        /// <param name="name">The name.</param>
         internal RICommonLogger(String name)
         {
             FReflectInsight = RILogManager.Get(name);
         }
 
-        ///--------------------------------------------------------------------
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RICommonLogger"/> class.
+        /// </summary>
+        /// <param name="type">The type.</param>
         internal RICommonLogger(Type type): this(type.FullName)
         {
         }
 
-        ///--------------------------------------------------------------------
-        static private Boolean SendInternalError(ReflectInsight ri, MessageType mType, Exception ex)
+        /// <summary>
+        /// Sends the internal error.
+        /// </summary>
+        /// <param name="ri">The ri.</param>
+        /// <param name="mType">Type of the m.</param>
+        /// <param name="ex">The ex.</param>
+        /// <returns></returns>
+        static private Boolean SendInternalError(IReflectInsight ri, MessageType mType, Exception ex)
         {
             return (Boolean)FSendInternalErrorMethodInfo.Invoke(ri, new object[] { mType, ex });
         }
 
-        ///--------------------------------------------------------------------
+        /// <summary>
+        /// Sends the message.
+        /// </summary>
+        /// <param name="mType">Type of the m.</param>
+        /// <param name="message">The message.</param>
+        /// <param name="exception">The exception.</param>
         private void SendMessage(MessageType mType, String message, Exception exception)
         {
             try
@@ -75,14 +96,14 @@ namespace ReflectSoftware.Insight.Extensions.CommonLogging
                 if (!SendInternalError(FReflectInsight, mType, ex)) throw;
             }
         }
-        ///--------------------------------------------------------------------
-        /// <summary>   Internal function to write a message. </summary>
-        ///
-        /// <seealso cref="M:Common.Logging.Factory.AbstractLogger.WriteInternal(LogLevel,Object,Exception)"/>
-        /// ### <param name="level">        the level of this log event. </param>
-        /// ### <param name="message">      the message to log. </param>
-        /// ### <param name="exception">    the exception to log (may be null) </param>
-        ///--------------------------------------------------------------------
+
+        /// <summary>
+        /// Internal function to write a message.
+        /// </summary>
+        /// <param name="logLevel">The log level.</param>
+        /// <param name="message">the message to log.</param>
+        /// <param name="exception">the exception to log (may be null)</param>
+        /// <seealso cref="M:Common.Logging.Factory.AbstractLogger.WriteInternal(LogLevel,Object,Exception)" />
         protected override void WriteInternal(LogLevel logLevel, Object message, Exception exception)
         {
             if (logLevel == LogLevel.Off)
@@ -130,98 +151,80 @@ namespace ReflectSoftware.Insight.Extensions.CommonLogging
                 SendMessage(MessageType.SendMessage, strMessage, exception);
             }
         }
-        ///--------------------------------------------------------------------
+
         /// <summary>
         /// Checks if this logger is enabled for the
         /// <see cref="F:Common.Logging.LogLevel.Debug" /> level.
         /// </summary>
-        ///
         /// <remarks>
         /// Override this in your derived class to comply with the underlying logging system.
         /// </remarks>
-        ///
-        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsDebugEnabled"/>
-        ///--------------------------------------------------------------------
+        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsDebugEnabled" />
         public override bool IsDebugEnabled
         {
             get { return true; }
         }
-        ///--------------------------------------------------------------------
+
         /// <summary>
         /// Checks if this logger is enabled for the
         /// <see cref="F:Common.Logging.LogLevel.Error" /> level.
         /// </summary>
-        ///
         /// <remarks>
         /// Override this in your derived class to comply with the underlying logging system.
         /// </remarks>
-        ///
-        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsErrorEnabled"/>        
-        ///--------------------------------------------------------------------
+        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsErrorEnabled" />
         public override bool IsErrorEnabled
         {
             get { return true; }
         }
-        ///--------------------------------------------------------------------        
+
         /// <summary>
         /// Checks if this logger is enabled for the
         /// <see cref="F:Common.Logging.LogLevel.Fatal" /> level.
         /// </summary>
-        ///
         /// <remarks>
         /// Override this in your derived class to comply with the underlying logging system.
         /// </remarks>
-        ///
-        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsFatalEnabled"/>
-        ///--------------------------------------------------------------------
+        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsFatalEnabled" />
         public override bool IsFatalEnabled
         {
             get { return true; }
         }
-        ///--------------------------------------------------------------------        
+
         /// <summary>
         /// Checks if this logger is enabled for the
         /// <see cref="F:Common.Logging.LogLevel.Info" /> level.
         /// </summary>
-        ///
         /// <remarks>
         /// Override this in your derived class to comply with the underlying logging system.
         /// </remarks>
-        ///
-        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsInfoEnabled"/>
-        ///--------------------------------------------------------------------
+        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsInfoEnabled" />
         public override bool IsInfoEnabled
         {
             get { return true; }
         }
-        ///--------------------------------------------------------------------        
+
         /// <summary>
         /// Checks if this logger is enabled for the
         /// <see cref="F:Common.Logging.LogLevel.Trace" /> level.
         /// </summary>
-        ///
         /// <remarks>
         /// Override this in your derived class to comply with the underlying logging system.
         /// </remarks>
-        ///
-        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsTraceEnabled"/>
-        ///--------------------------------------------------------------------
+        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsTraceEnabled" />
         public override bool IsTraceEnabled
         {
             get { return true; }
         }
-        ///--------------------------------------------------------------------       
+
         /// <summary>
         /// Checks if this logger is enabled for the
         /// <see cref="F:Common.Logging.LogLevel.Warn" /> level.
         /// </summary>
-        ///
         /// <remarks>
         /// Override this in your derived class to comply with the underlying logging system.
         /// </remarks>
-        ///
-        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsWarnEnabled"/>
-       ///--------------------------------------------------------------------
+        /// <seealso cref="P:Common.Logging.Factory.AbstractLogger.IsWarnEnabled" />
         public override bool IsWarnEnabled
         {
             get { return true; }

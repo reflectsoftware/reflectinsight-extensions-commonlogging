@@ -10,7 +10,7 @@
 
 We've added support for the Common.Logging framework. This allows you to leverage your current investment in the Common.Logging framework, but leverage the power and flexibility that comes with the ReflectInsight viewer. You can view your Common.Logging messages in real-time, in a rich viewer that allows you to filter out and search for what really matters to you.
 
-The Common.Logging extension supports Common.Logging v2.1.2. However if you need to support an older version, then you will need to download the ReflectInsight Logging Extensions Library from GitHub. You can then reference and rebuild the extension against a specific release of the Common.Logging.dll that you plan to use. 
+The Common.Logging extension supports Common.Logging v3.3.1. However if you need to support an older version, then you will need to download the ReflectInsight Logging Extensions Library from GitHub. You can then reference and rebuild the extension against a specific release of the Common.Logging.dll that you plan to use. 
 
 ## Getting Started
 

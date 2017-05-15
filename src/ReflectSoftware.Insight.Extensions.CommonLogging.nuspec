@@ -23,15 +23,13 @@ You can view your Common Logging messages in realtime, in a rich viewer that all
         <tags>reflectinsight logging log logfiles events Common.Logging structured tracing trace debug diagnostic</tags>
         <dependencies>
             <dependency id="Common.Logging" version="3.3.1" />
-            <dependency id="ReflectSoftware.Insight" version="5.6.1.2" />
+            <dependency id="ReflectSoftware.Insight" version="5.7.0.0" />
         </dependencies>
         <references>
             <reference file="ReflectSoftware.Insight.Extensions.CommonLogging.dll" />
         </references>
     </metadata>
     <files>
-        <!--<file src="bin\release\net20\ReflectSoftware.Insight.Extensions.CommonLogging.dll" target="lib\net20\ReflectSoftware.Insight.Extensions.CommonLogging.dll" />
-        <file src="bin\release\net40\ReflectSoftware.Insight.Extensions.CommonLogging.dll" target="lib\net40\ReflectSoftware.Insight.Extensions.CommonLogging.dll" />-->
         <file src="bin\release\net45\ReflectSoftware.Insight.Extensions.CommonLogging.dll" target="lib\net45\ReflectSoftware.Insight.Extensions.CommonLogging.dll" />
     </files>
 </package>
