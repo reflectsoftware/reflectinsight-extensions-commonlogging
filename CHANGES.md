@@ -1,5 +1,11 @@
 ## Change Log ##
 
+#### Version 5.7.2 ####
+ * Updated to ReflectInsight v5.7.1.1
+ * Updated reference to Newtonsoft.Json v10.0.3
+ * Updated reference to Common.Logging to v3.4.1
+ * Moved sample here
+
 #### Version 5.7.1 ####
  * Updated to ReflectInsight v5.7.1.1
  * Updated reference to Newtonsoft.Json v10.0.2

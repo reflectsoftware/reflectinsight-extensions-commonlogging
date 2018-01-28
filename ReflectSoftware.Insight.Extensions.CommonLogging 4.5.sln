@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectSoftware.Insight.Extensions.CommonLogging 4.5", "src\ReflectSoftware.Insight.Extensions.CommonLogging 4.5.csproj", "{F9D54963-6667-49A4-96BB-64024A3BF061}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{64DE93BF-E553-43DA-A59D-F07DCA3E9924}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{64DE93BF-E553-43DA-A59D-F07DCA3E9924}"
 	ProjectSection(SolutionItems) = preProject
 		Build.ps1 = Build.ps1
 		CHANGES.md = CHANGES.md
@@ -18,6 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{923D2EBF-A56
 		src\ReflectSoftware.Insight.Extensions.CommonLogging.nuspec = src\ReflectSoftware.Insight.Extensions.CommonLogging.nuspec
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{8CEFD72D-C185-45DB-94C5-130825AFA954}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3BAA13A0-CEC0-4B8B-A2EA-AC7CC00D603B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectInsight.Extensions.CommonLogging.Sample", "Sample\ReflectInsight.Extensions.CommonLogging.Sample\ReflectInsight.Extensions.CommonLogging.Sample.csproj", "{74D32CE0-CDC7-43D1-B35D-149DC0DAFE67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,11 +34,20 @@ Global
 		{F9D54963-6667-49A4-96BB-64024A3BF061}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9D54963-6667-49A4-96BB-64024A3BF061}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9D54963-6667-49A4-96BB-64024A3BF061}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D32CE0-CDC7-43D1-B35D-149DC0DAFE67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D32CE0-CDC7-43D1-B35D-149DC0DAFE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D32CE0-CDC7-43D1-B35D-149DC0DAFE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D32CE0-CDC7-43D1-B35D-149DC0DAFE67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{F9D54963-6667-49A4-96BB-64024A3BF061} = {3BAA13A0-CEC0-4B8B-A2EA-AC7CC00D603B}
 		{923D2EBF-A569-4CD1-9742-5B587F1354C8} = {64DE93BF-E553-43DA-A59D-F07DCA3E9924}
+		{74D32CE0-CDC7-43D1-B35D-149DC0DAFE67} = {8CEFD72D-C185-45DB-94C5-130825AFA954}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E785F0BD-8761-4691-8162-6D4282BA367D}
 	EndGlobalSection
 EndGlobal
