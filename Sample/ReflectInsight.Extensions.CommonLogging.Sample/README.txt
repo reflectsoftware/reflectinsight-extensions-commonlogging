@@ -73,7 +73,7 @@ To get started with the Common.Logging Extension, please do the following:
 Additional Resources
 
 Getting started with the CommonLogging configuration
-http://insightextensions.codeplex.com/wikipage?title=Getting%20Started%20with%20Common.Logging%20Extension&referringTitle=Documentation
+https://reflectsoftware.atlassian.net/wiki/display/RI5/ReflectInsight+5+documentation
 
 Knowledge Base
 http://reflectsoftware.uservoice.com/knowledgebase
