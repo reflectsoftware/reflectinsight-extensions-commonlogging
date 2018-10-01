@@ -32,15 +32,13 @@ To get started with the Common.Logging Extension, please do the following:
 
 6. In your Common.Logging configuration, add the following section
 
-  <configuration>
-	  <common>
-		<logging>
-		  <factoryAdapter type="ReflectSoftware.Insight.Extensions.CommonLogging.RIFactoryAdapter, ReflectSoftware.Insight.Extensions.CommonLogging">
-			<arg key="configType" value="FILE" />
-		  </factoryAdapter>
-		</logging>
-	  </common>
-  </configuration>
+	<common>
+	  <logging>
+		<factoryAdapter type="ReflectSoftware.Insight.Extensions.CommonLogging.RIFactoryAdapter, ReflectSoftware.Insight.Extensions.CommonLogging">
+		  <arg key="configType" value="FILE" />
+		</factoryAdapter>
+	  </logging>
+	</common>
 
 
 7. Finally, you will need to configure the ReflectInsight.config file. 
@@ -55,10 +53,15 @@ To get started with the Common.Logging Extension, please do the following:
 			<debugMessageProcess enabled="true" />
 		</baseSettings>
 
+		<files default="">
+		  <autoSave name="DefaultSave" onNewDay="true" onMsgLimit="1000000" onSize="0" recycleFilesEvery="30" />
+		</files>
+
 		<listenerGroups active="Debug">
 			<group name="Debug" enabled="true" maskIdentities="false">
 			<destinations>
 				<destination name="Viewer" enabled="true" filter="" details="Viewer" />
+				<destination name="BinaryFile" enabled="true" filter="" details="BinaryFile[path=$(workingdir)\Logs\Log.rlg; autoSave=DefaultSave]" />
 			</destinations>
 			</group>
 		</listenerGroups>
